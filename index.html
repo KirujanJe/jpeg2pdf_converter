@@ -1,0 +1,42 @@
+<!-- JPEG TO PDF CONVERTER Website by Kirujan Jegatheeswaran-->
+<!-- Stack: HTML5, External CSS, JS, js pdf library-->
+<!-- 2024-12-01 -->
+ <!--"https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>JPEG TO PDF Converter</title>
+</head>
+<body>
+    <div class = 'header'>
+            <h1><i> JPEG TO PDF Converter </i></h1>
+            <h5><i>Tech: </i>HTML, CSS, JS & jsPDF library </h5>
+            <h5><i> Author: </i> Kirujan Je </h5>
+            <p><b> Version 1 -- Date: Dec 01 2024 </b></p>
+        </div>
+
+    <div class="container">
+        <input type="file" id="imageInput" accept="image/jpeg" multiple />
+
+ <select id="pageSize">
+            <option value="a4">A4</option>
+            <option value="letter">Letter</option>
+        </select>
+
+        <button onclick="convertToPDF()">Convert to PDF</button>
+    </div>
+
+    <!-- jsPDF library -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+     <script src="script.js"></script>
+
+</body>
+</html> 
+
+<!-- End of Code -->
